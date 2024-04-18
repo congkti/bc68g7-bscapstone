@@ -1,0 +1,112 @@
+/* ///////////////////////////////////////////// */
+/* Project name:	BC68_Capstone Bootstrap_Farmstead
+- Handler:	Bùi Hữu Công & Lê Minh Khoa
+- Description:	Capstone Exercise, Bootstrap/HTML5/CSS3 Web template for Farmstead project */
+/* ///////////////////////////////////////////// */
+/* ======| GLOBAL CSS |====== */
+/* google-fonts */
+@import url("//fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("//fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+/* //google-fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* primary color: #fb811e
+   secondary color: #009f4d */
+:root {
+  --priColor: #fb811e;
+  --secColor: #009f4d;
+  --black: #060606;
+
+  /* default light theme */
+  --bgThemeColor: #fff;
+  --headingColor: var(--black);
+  --txtColor: #707070;
+}
+[data-theme="dark"] {
+  /* for dark theme */
+  --bgThemeColor: #222;
+  --headingColor: #fdfdfd;
+  --txtColor: #b7b7b7;
+}
+body {
+  background-color: var(--bgThemeColor);
+  color: var(--txtColor);
+  font-family: "Source Sans Pro";
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Volkhov";
+  color: var(--headingColor);
+}
+a {
+  color: var(--secColor);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--priColor);
+}
+body a,
+body a i,
+button,
+.btn,
+input {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+a.logo {
+  color: var(--priColor);
+  display: block;
+  max-width: fit-content;
+  margin: 10px 0;
+  position: relative;
+  font-family: "Volkhov";
+  font-size: 32px;
+  line-height: 32px;
+}
+a.logo i {
+  color: var(--priColor);
+  font-size: 21px;
+  color: var(--priColor);
+  position: absolute;
+  top: -11px;
+  left: 55px;
+}
+a.logo:hover,
+a.logo:hover i {
+  color: var(--headingColor);
+}
+a.btnlink {
+  display: block;
+  max-width: fit-content;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: var(--priColor);
+  margin: 20px 10px;
+}
+a.btnlink:hover {
+  background-color: var(--secColor);
+  color: #fff;
+}
+.test_switch_theme {
+  text-align: center;
+}
+/* =================> global eof <==================== */
+/* ======| Header CSS |====== */

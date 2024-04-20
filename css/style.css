@@ -307,30 +307,21 @@ i.sun {
 }
 
 /* devKhoa-Footer */
-.w3l-clients-1:before {
-  content: "";
-  background: rgb(10 10 10 / 52%);
-  position: absolute;
-  top: 0;
-  min-height: 100%;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-
 .w3l-clients-1 {
-  background: url(./../img/bg1.jpg);
-}
-
-.w3l-clients-1 {
-  background: #fafafa;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background: #fafafa url(./../img/bg1.jpg) no-repeat center fixed;
   background-size: cover;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
+.w3l-clients-1:before {
+  content: "";
+  background-color: rgb(10 10 10 / 52%);
+  position: absolute;
+  min-height: 100%;
+  inset: 0;
+  /* z-index: -1; */
+}
+
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
@@ -397,7 +388,8 @@ a.testi-img {
   bottom: -90px;
 } */
 
-.w3l-clients-1 .owl-theme .owl-dots .owl-dot.active span, .w3l-clients-1 .owl-theme .owl-dots .owl-dot:hover span {
+.w3l-clients-1 .owl-theme .owl-dots .owl-dot.active span,
+.w3l-clients-1 .owl-theme .owl-dots .owl-dot:hover span {
   background: #fb811e;
   opacity: 1;
 }
@@ -426,7 +418,7 @@ a.testi-img {
 }
 
 .w3l-footer-16 .subscribe button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .w3l-footer-16 ul.social li {
@@ -443,7 +435,7 @@ li {
 }
 
 .w3l-footer-16 ul.social li a {
-  color:#009f4d;
+  color: #009f4d;
   width: 35px;
   height: 35px;
   background: rgb(10 191 83 / 8%);
@@ -466,6 +458,10 @@ li {
   display: inline-block;
   font: normal normal normal 14px / 1 FontAwesome;
   text-rendering: auto;
+}
+.FooterLogo {
+  margin-bottom: 1.15rem;
+  margin-top: -0.65rem;
 }
 
 #movetop {

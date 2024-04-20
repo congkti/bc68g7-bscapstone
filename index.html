@@ -30,31 +30,189 @@
   </head>
 
   <body>
-    <!-- test switch light/dark theme. Delete if not use -->
-    <div class="test_switch_theme">
-      <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />Dark theme
-        <div class="change_ico"></div>
-      </label>
-      <h1>Heading 1</h1>
-      <p>
-        Lorem ipsum dolor sit amet <a href="#">This is a link</a> consectetur
-        adipisicing elit. Tempora, provident?
-      </p>
-    </div>
-    <!-- //test switch theme -->
-    <header>
-      <!-- place navbar here -->
-      <!-- logo -->
-      <a href="./index.html" title="Farmstead Homepage" class="logo"
-        >Farmstead <i class="fa-solid fa-leaf"></i>
-      </a>
-      <!-- logo eof -->
+    <header class="fixed-top d-grid align-items-center" id="header">
+      <div class="container">
+        <div
+          class="d-flex align-content-center justify-content-between flex-wrap"
+        >
+          <h1>
+            <!-- logo -->
+            <a href="./index.html" title="Farmstead Homepage" class="logo"
+              >Farmstead <i class="fa-solid fa-leaf"></i>
+            </a>
+            <!-- logo eof -->
+          </h1>
+          <!-- switch dark/light theme -->
+          <div
+            class="d-flex align-items-center justify-content-end position-relative gap-2"
+          >
+            <!-- search -->
+            <form class="searchbar" action="" method="get">
+              <input type="search" name="s" />
+            </form>
+            <label class="theme-switch" for="chkb_switch">
+              <input type="checkbox" id="chkb_switch" />
+              <div class="change_ico">
+                <i class="material-symbols-outlined moon"> dark_mode </i>
+                <i class="material-symbols-outlined sun"> light_mode </i>
+              </div>
+            </label>
+            <!-- menu -->
+            <nav id="navbar-top" class="navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="material-symbols-outlined"> menu </span>
+              </button>
+              <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog Posts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Landing page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Elements page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">404 page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- =========================================================== -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="page-header py-5">
+      <div class="container py-5 mt-5">
+        <h4 class="page-title">About Us</h4>
+        <ul class="breadcrumb" aria-label="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a class="disabled" aria-disabled="true">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="body">
+      <div class="test_content container" style="opacity: 0.5">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+          asperiores nobis nonam? Laudantium nulla ducimus sitecto! Laudantium
+          maiores dicta atque consequuntur incidunt, earum quibusdam autem
+          consequatur sunt? Atqumque ipsum in doloremque dolor vel quae! Quis
+          suscipit ipsam, aspernatur consequatur magnam odit at sit numquam sed
+          unde? iatur sapiente temporibus iure non repellat laudantium
+          perspiciatis?
+        </p>
+      </div>
       <!-- button link -->
       <a class="btnlink" href="./service.html">learn more</a>
       <!-- //button link -->
-    </header>
-    <section class="body">
       <main id="main_side"></main>
       <aside id="right_side"></aside>
     </section>
@@ -84,5 +242,6 @@
 
     <!-- theme switch js (light and dark)-->
     <script src="./js/theme-change.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>

@@ -25,41 +25,282 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- my CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <!-- test switch light/dark theme. Delete if not use -->
-    <div class="test_switch_theme">
-      <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />Dark theme
-        <div class="change_ico"></div>
-      </label>
-      <h1>Heading 1</h1>
-      <p>
-        Lorem ipsum dolor sit amet <a href="#">This is a link</a> consectetur
-        adipisicing elit. Tempora, provident?
-      </p>
-    </div>
-    <!-- //test switch theme -->
-    <header>
-      <!-- place navbar here -->
-      <!-- logo -->
-      <a href="./index.html" title="Farmstead Homepage" class="logo"
-        >Farmstead <i class="fa-solid fa-leaf"></i>
-      </a>
-      <!-- logo eof -->
+    <header class="fixed-top d-grid align-items-center" id="header">
+      <div class="container">
+        <div
+          class="d-flex align-content-center justify-content-between flex-wrap"
+        >
+          <h1>
+            <!-- logo -->
+            <a href="./index.html" title="Farmstead Homepage" class="logo"
+              >Farmstead <i class="fa-solid fa-leaf"></i>
+            </a>
+            <!-- logo eof -->
+          </h1>
+          <!-- switch dark/light theme -->
+          <div
+            class="d-flex align-items-center justify-content-end position-relative gap-2"
+          >
+            <!-- search -->
+            <form class="searchbar" action="" method="get">
+              <input type="search" name="s" />
+            </form>
+            <label class="theme-switch" for="chkb_switch">
+              <input type="checkbox" id="chkb_switch" />
+              <div class="change_ico">
+                <i class="material-symbols-outlined moon"> dark_mode </i>
+                <i class="material-symbols-outlined sun"> light_mode </i>
+              </div>
+            </label>
+            <!-- menu -->
+            <nav id="navbar-top" class="navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="material-symbols-outlined"> menu </span>
+              </button>
+              <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog Posts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Landing page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Elements page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">404 page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- =========================================================== -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="page-header py-5">
+      <div class="container py-5 mt-5">
+        <h4 class="page-title">About Us</h4>
+        <ul class="breadcrumb" aria-label="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a class="disabled" aria-disabled="true">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="body">
       <!-- button link -->
       <a class="btnlink" href="./service.html">learn more</a>
       <!-- //button link -->
-    </header>
-    <section class="body">
       <main id="main_side"></main>
       <aside id="right_side"></aside>
     </section>
     <footer>
+      <!-- quotation -->
+      <section class="w3l-clients-1 py-5" id="testimonials">
+          <style>
+            .w3l-clients-1 {
+              background: url(./img/bg1.jpg);
+            }
+          </style>
+          <div class="customer-layout py-lg-5">
+            <div class="container py-md-5 py-4 HomePageTestimonials">
+              <div class="testimonial-row">
+                <div id="owl-demo2" class="owl-two owl-carousel owl-theme mb-md-3 mb-sm-5 mb-4 owl-loaded owl-drag">
+                  <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0.5s ease 0s; width: 3570px;">
+                      <div class="owl-item active" style="width: 1170px; margin-right: 20px;">
+                        <div class="item">
+                          <div class="testimonial-content">
+                            <div class="row testimonial align-items-center">
+                              <div class="col-md-3 testi-des">
+                                <a href="#url" class="testi-img">
+                                  <img src="./img/testi1.jpg" alt="" class="radius-image img-fluid">
+                                </a>
+                                <div class="peopl align-self">
+                                  <h3>Dennis Wilson</h3>
+                                  <p class="identity">Customer</p>
+                                </div>
+                              </div>
+                              <div class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center">
+                                <span class="fa fa-quote-left"></span>
+                                <blockquote>
+                                  <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae laudantium Quas minima sunt natus tempore, maiores aliquid modi felis sequi optio lacinia id ipsum non velit, culpa. voluptate rem ullam dolore nisi est quasi, doloribus tempora. est elit. Non quae, fugiat ad libero justo sed amet.</q>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 1170px; margin-right: 20px;">
+                        <div class="item">
+                          <div class="testimonial-content">
+                            <div class="row testimonial align-items-center">
+                              <div class="col-md-3 testi-des">
+                                <a href="#url" class="testi-img">
+                                  <img src="./img/testi2.jpg" alt="" class="radius-image img-fluid">
+                                </a>
+                                <div class="peopl align-self">
+                                  <h3>Dennis Wilson</h3>
+                                  <p class="identity">Customer</p>
+                                </div>
+                              </div>
+                              <div class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center">
+                                <span class="fa fa-quote-left"></span>
+                                <blockquote>
+                                  <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae laudantium Quas minima sunt natus tempore, maiores aliquid modi felis sequi optio lacinia id ipsum non velit, culpa. voluptate rem ullam dolore nisi est quasi, doloribus tempora. est elit. Non quae, fugiat ad libero justo sed amet.</q>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 1170px; margin-right: 20px;">
+                        <div class="item">
+                          <div class="testimonial-content">
+                            <div class="row testimonial align-items-center">
+                              <div class="col-md-3 testi-des">
+                                <a href="#url" class="testi-img">
+                                  <img src="./img/testi3.jpg" alt="" class="radius-image img-fluid">
+                                </a>
+                                <div class="peopl align-self">
+                                  <h3>Dennis Wilson</h3>
+                                  <p class="identity">Customer</p>
+                                </div>
+                              </div>
+                              <div class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center">
+                                <span class="fa fa-quote-left"></span>
+                                <blockquote>
+                                  <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae laudantium Quas minima sunt natus tempore, maiores aliquid modi felis sequi optio lacinia id ipsum non velit, culpa. voluptate rem ullam dolore nisi est quasi, doloribus tempora. est elit. Non quae, fugiat ad libero justo sed amet.</q>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Repeat this structure for each testimonial -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      
+      </section>
       <!-- place footer here -->
+      <footer>
+        <section class="w3l-footer-16">
+          <div class="w3l-footer-16-main py-5">
+            <div class="container py-4">
+              <div class="row footer-p">
+                <div class="col-lg-4 order-lg-1 order-3 mt-lg-0 mt-5">
+      
+                  <h4 class="FooterLogo">
+                  <a class="logo" href="https://wp.w3layouts.com/farmstead/">Farmstead<i class="fa fa-leaf" aria-hidden="true"></i></a>
+                  </h4>
+                  <p class="mt-4">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam
+                    eget turpis ornare, euismod ligul aeget, enenatis dui. </p>
+                  <!-- copyright -->
+                  <p class="copy-text mt-5 CopyRights">© 2024 Farmstead. All Rights Reserved |
+                  WordPress Theme by <a href="https://w3layouts.com/">W3Layouts.</a>
+                  </p>
+                </div>
+      
+                <div class="col-lg-4 pl-lg-5 FooterContact">
+                  <h3>Find Us</h3>
+                  <div class="column-2">
+      
+                    <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+                    
+                    <p class="mt-3">Phone: <a href="tel:+12 23456790">+12 23456790</a>
+                    </p>
+                    
+                    <p class="mt-3"> Email: <a href="mailto:info@example.com">info@example.com</a>
+                    </p>
+                    
+                    <p class="mt-3">Fax: <a href="tel:+11 367 21890">+ 11 367 21890</a>
+                    </p>
+                    
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-7 order-lg-3 order-1 column mt-lg-0 mt-5">
+                  <h3>Newsletter</h3>
+                  <div class="end-column FooterSubscribe">
+                    <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+                    <form action="" class="subscribe d-flex mt-3" method="post">
+                      <input type="email" name="Email" placeholder="Email Address" required="">
+                      <button><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+                    </form>
+                  </div>
+                  <ul class="social mt-4 pt-2 FooterSocial">
+      
+                    <li><a href="https://www.facebook.com/w3layouts/"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                    </li>
+
+                    <li><a href="https://in.linkedin.com/company/w3layouts"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                    </li>
+
+                    <li><a href="https://twitter.com/W3layouts"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                    </li>
+
+                    <li><a href="https://w3layouts.com/tag/email-templates/"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                    </li>
+
+                    <li><a href="https://w3layouts.com/"><span class="fa fa-github" aria-hidden="true"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
+          <span class="fa fa-level-up" aria-hidden="true"></span>
+        </button>
+            
+
+            
+      </footer>
+  
     </footer>
     <!-- ================================================ -->
     <!-- jQuery 3.7.1 -->
@@ -84,5 +325,59 @@
 
     <!-- theme switch js (light and dark)-->
     <script src="./js/theme-change.js"></script>
+  <script src="./js/scroll.js"></script>
+<!-- <<<<<<< devKhoa -->
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <script>
+      $(document).ready(function () {
+        $("#owl-demo2").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          responsiveClass: true,
+          autoplay: false,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            1000: {
+              items: 1,
+              nav: false,
+              loop: false
+            }
+          }
+        })
+      })
+    </script>
+    
+    <!-- move to top -->
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+    
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    
   </body>
 </html>

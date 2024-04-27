@@ -42,6 +42,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Fancy box -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
 
     <!-- my CSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -91,7 +96,7 @@
               <div class="navbar-collapse collapse" id="navbarNav">
                 <ul class="navbar-nav dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a class="nav-link" aria-current="page" href="./index.html"
                       >Home</a
                     >
                   </li>
@@ -114,7 +119,7 @@
                     <a class="nav-link" href="404.html">404 page</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link active" href="contact.html">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -125,169 +130,101 @@
       </div>
     </header>
 
+    <!-- Page Head -->
     <section class="page-header py-5">
       <div class="container py-5 mt-5">
         <h4 class="page-title">About Us</h4>
         <ul class="breadcrumb" aria-label="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a class="disabled" aria-disabled="true">About Us</a>
+            <a class="disabled" aria-disabled="true">Contact Us</a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="body">
-      <!-- button link -->
-      <a class="btnlink" href="./service.html">learn more</a>
-      <!-- //button link -->
-      <main id="main_side"></main>
-      <aside id="right_side"></aside>
-    </section>
-    <!-- testimonials -->
-    <section class="w3l-clients-1 py-5" id="testimonials">
-      <div class="customer-layout py-lg-5">
-        <div class="container py-md-5 py-4 HomePageTestimonials">
-          <div class="testimonial-row">
-            <div
-              id="owl-demo2"
-              class="owl-two owl-carousel owl-theme mb-md-3 mb-sm-5 mb-4 owl-loaded owl-drag"
-            >
-              <div class="owl-stage-outer">
-                <div
-                  class="owl-stage"
-                  style="
-                    transform: translate3d(0px, 0px, 0px);
-                    transition: all 0.5s ease 0s;
-                    width: 3570px;
-                  "
-                >
-                  <div
-                    class="owl-item active"
-                    style="width: 1170px; margin-right: 20px"
-                  >
-                    <div class="item">
-                      <div class="testimonial-content">
-                        <div class="row testimonial align-items-center">
-                          <div class="col-md-3 testi-des">
-                            <a href="#url" class="testi-img">
-                              <img
-                                src="./img/testi1.jpg"
-                                alt=""
-                                class="radius-image img-fluid"
-                              />
-                            </a>
-                            <div class="peopl align-self">
-                              <h3>Dennis Wilson</h3>
-                              <p class="identity">Customer</p>
-                            </div>
-                          </div>
-                          <div
-                            class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center"
-                          >
-                            <span class="fa fa-quote-left"></span>
-                            <blockquote>
-                              <q
-                                >Lorem ipsum dolor sit amet int consectetur
-                                adipisicing elit. Velita beatae laudantium Quas
-                                minima sunt natus tempore, maiores aliquid modi
-                                felis sequi optio lacinia id ipsum non velit,
-                                culpa. voluptate rem ullam dolore nisi est
-                                quasi, doloribus tempora. est elit. Non quae,
-                                fugiat ad libero justo sed amet.</q
-                              >
-                            </blockquote>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 1170px; margin-right: 20px"
-                  >
-                    <div class="item">
-                      <div class="testimonial-content">
-                        <div class="row testimonial align-items-center">
-                          <div class="col-md-3 testi-des">
-                            <a href="#url" class="testi-img">
-                              <img
-                                src="./img/testi2.jpg"
-                                alt=""
-                                class="radius-image img-fluid"
-                              />
-                            </a>
-                            <div class="peopl align-self">
-                              <h3>Dennis Wilson</h3>
-                              <p class="identity">Customer</p>
-                            </div>
-                          </div>
-                          <div
-                            class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center"
-                          >
-                            <span class="fa fa-quote-left"></span>
-                            <blockquote>
-                              <q
-                                >Lorem ipsum dolor sit amet int consectetur
-                                adipisicing elit. Velita beatae laudantium Quas
-                                minima sunt natus tempore, maiores aliquid modi
-                                felis sequi optio lacinia id ipsum non velit,
-                                culpa. voluptate rem ullam dolore nisi est
-                                quasi, doloribus tempora. est elit. Non quae,
-                                fugiat ad libero justo sed amet.</q
-                              >
-                            </blockquote>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 1170px; margin-right: 20px"
-                  >
-                    <div class="item">
-                      <div class="testimonial-content">
-                        <div class="row testimonial align-items-center">
-                          <div class="col-md-3 testi-des">
-                            <a href="#url" class="testi-img">
-                              <img
-                                src="./img/testi3.jpg"
-                                alt=""
-                                class="radius-image img-fluid"
-                              />
-                            </a>
-                            <div class="peopl align-self">
-                              <h3>Dennis Wilson</h3>
-                              <p class="identity">Customer</p>
-                            </div>
-                          </div>
-                          <div
-                            class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center"
-                          >
-                            <span class="fa fa-quote-left"></span>
-                            <blockquote>
-                              <q
-                                >Lorem ipsum dolor sit amet int consectetur
-                                adipisicing elit. Velita beatae laudantium Quas
-                                minima sunt natus tempore, maiores aliquid modi
-                                felis sequi optio lacinia id ipsum non velit,
-                                culpa. voluptate rem ullam dolore nisi est
-                                quasi, doloribus tempora. est elit. Non quae,
-                                fugiat ad libero justo sed amet.</q
-                              >
-                            </blockquote>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Repeat this structure for each testimonial -->
-                </div>
+    <!-- Contact Form -->
+    <section class="contact py-5">
+      <div class="container py-5">
+        <div class="row pt-5">
+          <div class="col-md-5">
+            <p class="sub_title">Get in touch</p>
+            <h3 class="title mb-4">Contact Us</h3>
+            <div class="infoItem">
+              <i class="fa-solid fa-earth-americas"></i>
+              <div class="info">
+                <h5>Company Address</h5>
+                <p>10001, 5th Avenue, 12202 street, USA.</p>
+              </div>
+            </div>
+            <div class="infoItem">
+              <i class="fa-solid fa-phone"></i>
+              <div class="info">
+                <h5>Call Us</h5>
+                <p><a href="#url">+1(21) 234 4567</a></p>
+              </div>
+            </div>
+            <div class="infoItem">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <h5>Email Us</h5>
+                <p><a href="#url">example@mail.com</a></p>
+              </div>
+            </div>
+            <div class="infoItem">
+              <i class="fa-solid fa-headphones"></i>
+              <div class="info">
+                <h5>Customer Support</h5>
+                <p><a href="#url">info@support.com</a></p>
               </div>
             </div>
           </div>
+          <div class="col-md-7">
+            <form action="">
+              <input
+                type="text"
+                id="ipName"
+                placeholder="Your Name*"
+                required
+              />
+              <input
+                type="email"
+                id="ipEmail"
+                placeholder="Your Email*"
+                required
+              />
+              <input
+                type="text"
+                id="ipSubject"
+                placeholder="Your Subject*"
+                required
+              />
+              <input
+                type="text"
+                id="ipWebsite"
+                placeholder="Website URL*"
+                required
+              />
+              <textarea
+                id="ipMessage"
+                rows="4"
+                placeholder="Type your message here*"
+              ></textarea>
+              <button class="btnlink" type="submit">Send Message</button>
+            </form>
+          </div>
         </div>
+      </div>
+      <div class="container-fluid">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5057608414068!2d106.69544587451716!3d10.772522059266814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3f3129e64d%3A0x8d6b2d79522c7f30!2sBen%20Thanh%20Market!5e0!3m2!1sen!2spl!4v1714191251526!5m2!1sen!2spl"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
@@ -485,6 +422,40 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+    </script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+        Carousel: {
+          transition: "slide",
+        },
+        // Config toolbar
+        Toolbar: {
+          display: {
+            left: ["infobar"],
+            middle: [
+              "zoomIn",
+              "zoomOut",
+              "toggle1to1",
+              "rotateCCW",
+              "rotateCW",
+              "flipX",
+              "flipY",
+            ],
+            right: ["slideshow", "thumbs", "close"],
+          },
+        },
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.js"></script>
+    <script>
+      $(".countup").counterUp({
+        delay: 10,
+        time: 3000,
+      });
     </script>
   </body>
 </html>

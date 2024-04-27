@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009f4d;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #009f4d;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <path id="circleBlur" class="cls-2" d="M100,15c46.94,0,85,38.06,85,85s-38.06,85-85,85S15,146.94,15,100"/>
+  <circle id="circleScale" class="cls-1" cx="100" cy="100" r="5"/>
+  <g id="circleRotate">
+    <path class="cls-3" d="M43.43,43.43c31.24-31.24,81.9-31.24,113.14,0"/>
+    <path class="cls-3" d="M156.57,156.57c-31.24,31.24-81.9,31.24-113.14,0"/>
+  </g>
+</svg>

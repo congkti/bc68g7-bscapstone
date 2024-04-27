@@ -1045,4 +1045,9 @@ li {
     width: 100%;
   }
 }
+@media screen and (max-width: 328px) {
+  #navbar-top #navbarNav ul {
+    right: -100px;
+  }
+}
 /* ==================| end CSS responsive |=============== */

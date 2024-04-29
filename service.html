@@ -525,9 +525,33 @@
     ></script>
 
     <script>
-      $(".counter .timer").counterUp({
-        delay: 10,
-        time: 1000,
+      $(document).ready(function () {
+        var $counters = $(".counter .timer");
+
+        function checkVisibility() {
+          var viewportTop = $(window).scrollTop();
+          var viewportBottom = viewportTop + $(window).height();
+
+          $counters.each(function () {
+            var $this = $(this);
+            var elementTop = $this.offset().top;
+            var elementBottom = elementTop + $this.outerHeight();
+
+            if (
+              elementBottom > viewportTop &&
+              elementTop < viewportBottom &&
+              !$this.hasClass("counted")
+            ) {
+              $this.counterUp({
+                delay: 10,
+                time: 1000,
+              });
+              $this.addClass("counted");
+            }
+          });
+        }
+
+        $(window).on("scroll", checkVisibility);
       });
     </script>
   </body>

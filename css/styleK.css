@@ -1406,7 +1406,18 @@ a.blog-desc1:hover,
     left: initial;
   }
 }
-
+@media (min-width: 992px) {
+  .pr-lg-5,
+  .px-lg-5 {
+    padding-right: 3rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .col-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
 /* ------------------------------ PAGINTION END ------------------------------ */
 
 .w3l-text-11 a.posts-view-left {

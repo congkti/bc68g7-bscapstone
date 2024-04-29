@@ -27,6 +27,7 @@
   --bgThemeColor: #fff;
   --headingColor: var(--black);
   --txtColor: #707070;
+
 }
 [data-theme="dark"] {
   /* for dark theme */

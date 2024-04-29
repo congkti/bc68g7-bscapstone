@@ -32,6 +32,9 @@
   --shadowDarkLight: rgba(0, 0, 0, 0.14);
   --shadowDarkLightHover: rgba(0, 0, 0, 0.3);
   --bw20DarkLight: rgba(0, 0, 0, 0.2);
+  --bg-light: #fafafa;
+  --border-color-light: #eee;
+  --border-color: transparent;
 }
 [data-theme="dark"] {
   /* for dark theme */
@@ -42,6 +45,9 @@
   --shadowDarkLight: rgba(0, 0, 0, 0.5);
   --shadowDarkLightHover: rgba(0, 0, 0, 0.14);
   --bw20DarkLight: rgba(255, 255, 255, 0.2);
+  --bg-light: #27282b;
+  --border-color-light: rgba(255, 255, 255, 0.2);
+  --border-color: transparent;
 }
 body {
   background-color: var(--bgThemeColor);
@@ -204,6 +210,7 @@ h3.title {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  user-select: none;
 }
 .theme-switch input {
   opacity: 0;
